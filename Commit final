@@ -1,0 +1,33 @@
+package Dio.com;
+
+
+import javax.swing.*;
+
+public class CacularMedia {
+    public static void main(String[] args) {
+        //declaração da variaveis
+        int opcao;
+        //entrada de dados
+        opcao = Integer.parseInt(JOptionPane.showInputDialog(" Entre com a opção desejada: " +
+            "\n1 - Média aritmética " +
+              "\n2 - Média ponderada " +
+              "\n3 - Sair"));
+
+        //processamento de dados
+
+        switch (opcao) {
+            case 1:
+                JOptionPane.showMessageDialog(null, "receber duas notas, calcular e mostrar a média aritmética. ");
+                break;
+            case 2:
+                JOptionPane.showMessageDialog(null, "receber três notas e seus respectivos pesos, calcular e mostrar\n" +
+                        "a média ponderada.");
+                break;
+            case 3:
+                JOptionPane.showMessageDialog(null,  "sair do programa. ");
+                break;
+
+        }
+
+    }
+}
